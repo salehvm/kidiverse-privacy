@@ -12,79 +12,125 @@
   .updated { color: #777; font-size: 14px; }
   a { color: #1976d2; }
   .card { background: #f0f7ff; border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 15px; }
+  th, td { border: 1px solid #dde7f0; padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: #f0f7ff; }
 </style>
 </head>
 <body>
 <h1>🧸 KidiVerse — Privacy Policy</h1>
-<p class="updated">Effective date: June 11, 2026</p>
+<p class="updated">Effective date: August 27, 2026</p>
 
 <p>KidiVerse is an educational game app designed for children under 6 years old.
 We take children's privacy very seriously. This policy explains what information
 the app does and does not collect, and how third-party services are used.</p>
 
 <div class="card">
-<strong>Summary:</strong> KidiVerse does not collect, store, or share any personal
-information. The app shows only child-appropriate, non-personalized ads and is fully
-compliant with COPPA (Children's Online Privacy Protection Act) and Apple's Kids
-Category guidelines.
+<strong>Summary:</strong> KidiVerse never asks for a name, an email address or an
+account, and there is nowhere in the app a child can type. Game progress stays on
+the device. The app does use Google Analytics for Firebase to count anonymous
+usage events, which is described in full below. KidiVerse complies with COPPA,
+the Google Play Families policy and Apple's Kids Category guidelines.
 </div>
 
-<h2>1. Information We Collect</h2>
-<p><strong>None.</strong> KidiVerse does not collect, request, or store any personal
-information from users. The app:</p>
+<h2>1. Information We Do Not Collect</h2>
+<p>KidiVerse does not collect, request or store any personal information. The app:</p>
 <ul>
   <li>does not require an account or registration;</li>
-  <li>does not collect names, email addresses, photos, or contacts;</li>
-  <li>does not access the microphone, camera, or location;</li>
-  <li>does not contain social media features, external links, or chat;</li>
-  <li>does not track users across apps or websites (no App Tracking Transparency
-      prompt is ever shown, because no tracking occurs).</li>
+  <li>does not collect names, email addresses, photos or contacts;</li>
+  <li>does not access the microphone, camera or location;</li>
+  <li>contains no social media features, external links or chat;</li>
+  <li>does not track users across other apps or websites;</li>
+  <li>on Android, does not request the Android Advertising ID at all.</li>
 </ul>
-<p>Game progress (such as collected stars and language preference) is stored only
-locally on the device and is never transmitted to us.</p>
+<p>The child profile shown in the app is a fixed default that ships with the app.
+Because there is no text field anywhere a child can reach, no personal detail can
+be entered even by accident.</p>
 
-<h2>2. Advertising</h2>
-<p>KidiVerse shows a single banner advertisement on the main menu, served by
-<strong>Google AdMob</strong>. Because KidiVerse is a child-directed app, AdMob is
-configured with:</p>
+<h2>2. What Stays On The Device</h2>
+<p>Game progress is written to the device's own private app storage and is never
+uploaded: collected stars, level and experience, stickers and medals, daily
+quests, the chosen buddy and theme, language and sound settings, the play
+statistics shown in the in-app Parent Zone, and whether a purchase has been
+unlocked. Deleting the app deletes all of it.</p>
+
+<h2>3. Anonymous Usage Analytics</h2>
+<p>KidiVerse uses <strong>Google Analytics for Firebase</strong> to understand which
+games are actually played, so the app can be improved. What it receives:</p>
 <ul>
-  <li><strong>Child-directed treatment (COPPA)</strong> — Google is notified that all
-      users must be treated as children;</li>
-  <li><strong>Maximum ad content rating "G"</strong> — only ads suitable for general
-      audiences, including young children, are shown;</li>
-  <li><strong>Non-personalized ads only</strong> — no behavioral profiling and no use
-      of advertising identifiers for personalization.</li>
+  <li>a randomly generated app-instance identifier, which is not linked to any
+      person and is reset if the app is reinstalled;</li>
+  <li>the names of in-app events, for example that a game screen was opened or a
+      star was earned;</li>
+  <li>app version, device model, operating-system version, language and country.</li>
 </ul>
-<p>For details, see <a href="https://policies.google.com/privacy">Google's Privacy
-Policy</a> and <a href="https://support.google.com/admob/answer/6223431">AdMob's
-child-directed advertising documentation</a>.</p>
+<p>Advertising-related data collection is explicitly switched off in the app's
+Firebase configuration, so this data is never used to build an advertising
+profile. No personal information is included.</p>
 
-<h2>3. In-App Purchases</h2>
-<p>KidiVerse offers one optional purchase ("Remove Ads"). Purchases are processed
-entirely by Apple through the App Store; we never see or store any payment
-information. A <strong>parental gate</strong> (a math question that young children
-cannot answer) protects the purchase screen so children cannot buy anything
-accidentally.</p>
+<h2>4. Notifications</h2>
+<p>The app uses <strong>Firebase Cloud Messaging</strong> to deliver occasional
+notifications, and can show an optional daily reminder to play. This involves a
+device notification token, which identifies an installation rather than a person.
+Turning notifications off in the device settings stops this entirely.</p>
 
-<h2>4. Remote Configuration</h2>
-<p>The app uses <strong>Firebase Remote Config</strong> (a Google service) solely to
-check whether an app update is required. This involves no personal data — only
-anonymous configuration values are downloaded by the app.</p>
+<h2>5. Remote Configuration</h2>
+<p>The app uses <strong>Firebase Remote Config</strong> to read a small number of
+settings, such as whether a newer version is required. Only anonymous
+configuration values are downloaded; no personal data is sent.</p>
 
-<h2>5. Children's Privacy (COPPA)</h2>
-<p>KidiVerse is designed for children under 6 and complies with COPPA. Since we do
-not collect any personal information from anyone, we do not collect personal
-information from children. If you believe a child has somehow provided personal
-information through the app, please contact us and we will delete it immediately.</p>
+<h2>6. Advertising</h2>
+<table>
+  <tr><th>Platform</th><th>Ads</th></tr>
+  <tr>
+    <td><strong>Android</strong> (Google Play)</td>
+    <td><strong>No ads at all.</strong> The Android version contains no advertising
+        SDK, makes no ad requests, and never reads an advertising identifier.</td>
+  </tr>
+  <tr>
+    <td><strong>iOS</strong> (App Store)</td>
+    <td>One banner advertisement on the main menu, served by Google AdMob and
+        configured for children: child-directed treatment under COPPA, a maximum
+        content rating of "G", and non-personalised ads only — no behavioural
+        profiling and no advertising identifier used for personalisation. Ads can
+        be removed permanently with a one-time purchase.</td>
+  </tr>
+</table>
+<p>For details on the iOS configuration, see
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+Google's documentation on child-directed advertising.</p>
 
-<h2>6. Changes to This Policy</h2>
+<h2>7. In-App Purchases</h2>
+<p>KidiVerse offers optional one-time purchases and no subscriptions. On Android
+there is one: unlocking the Premium Academy games. On iOS there are two: removing
+ads, and unlocking the Premium Academy games.</p>
+<p>Purchases are processed entirely by Google Play or by Apple; we never see or
+store any payment information. Every purchase is protected by a
+<strong>parental gate</strong> — a multiplication question young children cannot
+answer — so a child cannot buy anything on their own.</p>
+
+<h2>8. Children's Privacy (COPPA)</h2>
+<p>KidiVerse is designed for children under 6 and complies with COPPA, the Google
+Play Families policy and Apple's Kids Category guidelines. We do not collect
+personal information from anyone, and therefore do not collect personal
+information from children. Nothing is sold or rented to anyone, and no data is
+shared beyond the Google services named in this policy. If you believe a child
+has somehow provided personal information through the app, contact us and we will
+delete it immediately.</p>
+
+<h2>9. Data Deletion</h2>
+<p>Uninstalling KidiVerse permanently removes everything stored on the device. The
+analytics and notification identifiers described above are pseudonymous and reset
+on reinstall. To request deletion of any data associated with an installation,
+write to us and we will act within 30 days.</p>
+
+<h2>10. Changes To This Policy</h2>
 <p>If we update this policy, the new version will be published at this address with
-a new effective date. Material changes will be reflected in the app's App Store
-listing.</p>
+a new effective date. Material changes will be reflected in the app's store
+listings.</p>
 
-<h2>7. Contact</h2>
-<p>If you have any questions about this privacy policy, contact us at:<br>
-<strong>support@samofy.co.uk</strong></p>
-
+<h2>11. Contact</h2>
+<p>Samofy Limited<br>
+Email: <a href="mailto:support@samofy.co.uk">support@samofy.co.uk</a></p>
 </body>
 </html>
